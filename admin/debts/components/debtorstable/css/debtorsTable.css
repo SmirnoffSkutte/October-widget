@@ -1,0 +1,107 @@
+.debtorsTableContainer{
+    /*border: 1px solid black;*/
+}
+
+.debtorsSelectBlock{
+    display: flex;
+    align-items: center;
+}
+
+.debtorsSelectHeader{
+    color: rgb(128,84,207);
+}
+
+.debtorsHouseSelect{
+    padding:10px;
+    color: black;
+    width: 100%;
+}
+
+.debtorsMonthsInput{
+    padding:10px;
+    color: black;
+    width: 100%;
+}
+
+.debtorsTableBlock{
+    margin-top: 20px;
+}
+
+.debtorsTable{
+    border: 1px solid black;
+}
+
+.debtorsLoginForm{
+    background-color: #222529;
+    border: 1px solid #F6C353;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 10px;
+    height: 50vh;
+    width: 100%;
+}
+
+.debtorsFormLabel{
+    /* width: 100%; */
+    color:#F6C353;
+    font-size: large;
+}
+
+.debtorsFormInput{
+    padding-left:5px;
+    padding-right: 5px;
+    color: black;
+}
+
+.debtorsLoginHeader{
+    text-align: center;
+    color: orange;
+}
+
+.debtorsLoginError{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+.debtorsLoginButton{
+    margin-top:20px;
+    height: 50px;
+}
+
+/*Loader*/
+
+.debtorsLoading {
+    display: flex;
+    justify-content: center;
+}
+
+.debtorsLoading::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border: 10px solid #dddddd;
+    border-top-color: #009579;
+    border-radius: 50%;
+    animation: debtorsLoading 1s ease infinite;
+}
+
+@keyframes debtorsLoading {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
